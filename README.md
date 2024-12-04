@@ -58,28 +58,3 @@ After starting the app, you can:
 
 On mobile devices, the sidebar menu will collapse into a hamburger menu that can be toggled.
 
-## Contributing
-
-If you'd like to contribute to this project, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m "Add a new feature"
-    ```
-4. Push to your fork:
-    ```bash
-    git push origin feature/your-feature
-    ```
-5. Open a Pull Request.
-
-
-## Acknowledgments
-
-- Tailwind CSS for styling.
-- Lucide Icons for the icons used throughout the application.
-- React.js for building the UI components.
