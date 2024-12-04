@@ -35,13 +35,11 @@ Upon successful login, the app stores the user's session in **SessionStorage** t
 
 - **SessionStorage** allows you to store data in the browser for the duration of the page session. The data stored in SessionStorage is cleared once the browser tab or window is closed. This means that session data (like user authentication tokens or user details) is maintained as long as the tab is open, but the data is lost when the tab is closed or the user navigates away from the page.
 
-- In the Listings Dashboard, **SessionStorage** is used to persist the user's login state. When a user logs in, their authentication token and details are stored in the SessionStorage, ensuring the user doesn't have to log in again until the tab is closed.
-
 ### React Context
 
 - **React Context** is used in the Listings Dashboard for managing global state, specifically for user authentication details. React Context allows you to pass data through the component tree without having to pass props down manually at every level.
 
-- In the Listings Dashboard, a `AuthContext` is used to manage authentication. When a user logs in, their credentials are stored in the context, allowing other components to access the user data and session information.
+
 
 ## Deployment
 
