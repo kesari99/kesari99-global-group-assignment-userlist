@@ -47,7 +47,7 @@ Upon successful login, the app stores the user's session in **SessionStorage** t
 
 You can view the deployed version of the app at:
 
-[Listings Dashboard - Live](https://userlist-static-site.onrender.com/auth)
+[Listings Dashboard - Live](https://userlist-static-site.onrender.com/)
 
 ## Installation
 
