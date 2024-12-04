@@ -53,12 +53,12 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/listings-dashboard.git
+    https://github.com/kesari99/kesari99-global-group-assignment-userlist.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd listings-dashboard
+    cd client
     ```
 
 3. Install the dependencies:
@@ -68,12 +68,12 @@ To run this project locally, follow these steps:
 
 4. Run the app:
     ```bash
-    npm start
+    npm run dev
     ```
 
 5. Open the browser and visit:
     ```
-    http://localhost:3000
+    http://localhost:5173
     ```
 
 ## Usage
@@ -86,32 +86,6 @@ After starting the app, you can:
 
 On mobile devices, the sidebar menu will collapse into a hamburger menu that can be toggled.
 
-## Contributing
 
-If you'd like to contribute to this project, follow these steps:
 
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m "Add a new feature"
-    ```
-4. Push to your fork:
-    ```bash
-    git push origin feature/your-feature
-    ```
-5. Open a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Tailwind CSS for styling.
-- Lucide Icons for the icons used throughout the application.
-- React.js for building the UI components.
-- ShadCN UI for modern UI components and design elements.
