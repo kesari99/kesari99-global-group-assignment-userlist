@@ -11,13 +11,43 @@ The **Listings Dashboard** is a web application built with React.js, featuring a
 - **Tabs for Content**: Content on the main screen is displayed in tabs, with active tabs changing based on user interactions.
 - **Logout Functionality**: Users can log out of the application, resetting their credentials.
 - **Mobile-First**: The app includes a mobile-friendly version with a hamburger menu for easy access to the sidebar.
+- **ShadCN UI Integration**: The app uses ShadCN UI for various user interface components, offering a sleek and modern design system.
+- **Session Management**: The app uses **SessionStorage** to manage user sessions persistently while the user is active in the app.
+- **React Context**: **React Context** is used for centralized state management of user authentication, allowing for easier tracking and management of user data throughout the app.
 
 ## Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS, Lucide Icons
+- **Frontend**: React.js, Tailwind CSS, Lucide Icons, ShadCN UI
 - **State Management**: React Context API
-- **UI Components**: Custom button, tabs, and layout components
+- **UI Components**: Custom button, tabs, layout components, and UI elements from ShadCN UI
 - **Authentication**: Simple user session management using React Context and session storage
+
+## Authentication
+
+To log in, use the following credentials:
+
+- **Email**: `eve.holt@reqres.in`
+- **Password**: `cityslicka`
+
+Upon successful login, the app stores the user's session in **SessionStorage** to persist the session data across page reloads but clears it once the browser tab is closed. The user's authentication state is also stored using **React Context**.
+
+### SessionStorage
+
+- **SessionStorage** allows you to store data in the browser for the duration of the page session. The data stored in SessionStorage is cleared once the browser tab or window is closed. This means that session data (like user authentication tokens or user details) is maintained as long as the tab is open, but the data is lost when the tab is closed or the user navigates away from the page.
+
+- In the Listings Dashboard, **SessionStorage** is used to persist the user's login state. When a user logs in, their authentication token and details are stored in the SessionStorage, ensuring the user doesn't have to log in again until the tab is closed.
+
+### React Context
+
+- **React Context** is used in the Listings Dashboard for managing global state, specifically for user authentication details. React Context allows you to pass data through the component tree without having to pass props down manually at every level.
+
+- In the Listings Dashboard, a `AuthContext` is used to manage authentication. When a user logs in, their credentials are stored in the context, allowing other components to access the user data and session information.
+
+## Deployment
+
+You can view the deployed version of the app at:
+
+[Listings Dashboard - Live](https://userlist-static-site.onrender.com/auth)
 
 ## Installation
 
@@ -58,3 +88,32 @@ After starting the app, you can:
 
 On mobile devices, the sidebar menu will collapse into a hamburger menu that can be toggled.
 
+## Contributing
+
+If you'd like to contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m "Add a new feature"
+    ```
+4. Push to your fork:
+    ```bash
+    git push origin feature/your-feature
+    ```
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Tailwind CSS for styling.
+- Lucide Icons for the icons used throughout the application.
+- React.js for building the UI components.
+- ShadCN UI for modern UI components and design elements.
